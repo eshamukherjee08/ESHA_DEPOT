@@ -6,7 +6,7 @@ DEPOT::Application.configure do
   #   :domain => "domain.of.sender.net", 
   #   :authentication => "plain", 
   #   :user_name => "esha", 
-  #   :password => "poohandpiglet", 
+  #   :password => "sldsaldhs", 
   #   :enable_starttls_auto => true 
   # } 
 

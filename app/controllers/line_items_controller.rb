@@ -3,13 +3,17 @@ class LineItemsController < ApplicationController
   
   # GET /line_items
   # GET /line_items.xml
-  def index
+  def index  
+    
     @line_items = LineItem.all
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @line_items }
-    end
+    end  
+    
+    # debugger
+    # p "8888888888888888888"
   end
 
   # GET /line_items/1
