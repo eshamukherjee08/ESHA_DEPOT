@@ -10,7 +10,7 @@
 <body id="store">
 	<div id="banner">
 		<%= image_tag("logo.png") %>
-		<%= @page_title || "Pragmatic Bookself" %> <!--sets page heading-->
+		<%= @page_title || "PRAGMATIC STORE" %> <!--sets page heading-->
 	</div>
 	<div id="columns">
 		<div id="side">
@@ -30,7 +30,7 @@
 			<% end %>
 			<div id="cart">
 				<% if @cart %>
-					<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+					<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %><!--function in helper module, hiding cart if itz empty.-->
 						<%= render @cart %>
 					<% end %> 
 				<% end %>
